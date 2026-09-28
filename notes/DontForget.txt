@@ -1,0 +1,13 @@
+1) DRY: Do not Repeat Yourself;
+2) Orthogonality: Changes in one thing do not affect any of the others;
+3) ETC: Your software should be easy to change;
+4) Do not let the building rot: Fix all broken windows as soon as you find them;
+5) Good-Enough software: Perfect software does not exist;
+6) Sometimes tracer bullets can be useful;
+7) Design by contract: Define precise precondtions (promisses), 
+postconditions (guarantees), and invariatns. If a caller violates the contract,
+fail immediatly;
+8) Crash Early (Dead Programs Tell no Lies): When an impossible conditons occours,
+terminate or fail loudly;
+9) Decoupling and Tell, Don't ask: *?
+10) Reversibility: Assume every choice might need to change. Avoid architectural lock-in.

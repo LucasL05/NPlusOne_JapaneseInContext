@@ -1,0 +1,13 @@
+- Always remember to be a pragmatic programmer. 
+- I'm applying the Tracer Bullets framework for this poc
+
+Overall goal: "I wrote a small Android tool in Kotlin that parses an Anki deck, 
+pulls today's NHK Easy articles, 
+and finds n+1 sentences using Kuromoji. 
+It works, but it needs UI polish and better token matching."
+I hope this'll bring contributers and really kick off the project
+
+TODO:
+- install a Japanese keyboard;
+- def two Japanese senteces as variables;
+- Parse them with Kuromoji;
