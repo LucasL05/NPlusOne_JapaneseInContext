@@ -1,0 +1,30 @@
+# Compiled class files & bytecode
+*.class
+
+# Kotlin Native / Executables & Libraries
+*.kexe
+*.klib
+*.exe
+*.out
+*.so
+*.dylib
+*.dll
+
+# Gradle build outputs & cache
+.gradle/
+build/
+bin/
+out/
+
+# Maven build outputs
+target/
+
+# IntelliJ IDEA & Android Studio project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS-specific files
+.DS_Store
+Thumbs.db
