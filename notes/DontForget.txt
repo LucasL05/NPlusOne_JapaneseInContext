@@ -11,3 +11,4 @@ fail immediatly;
 terminate or fail loudly;
 9) Decoupling and Tell, Don't ask: *?
 10) Reversibility: Assume every choice might need to change. Avoid architectural lock-in.
+ 
