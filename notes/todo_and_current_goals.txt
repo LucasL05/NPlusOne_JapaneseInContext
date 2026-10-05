@@ -9,5 +9,5 @@ I hope this'll bring contributers and really kick off the project
 
 TODO:
 - install a Japanese keyboard;
-- def two Japanese senteces as variables;
-- Parse them with Kuromoji;
+- the app should somehow let the user know which of their Anki deck words failed
+to be transferred to the app.
