@@ -8,13 +8,36 @@ import com.atilika.kuromoji.ipadic.Token
 // --info
 //stacktrace
 
-fun createKnownLemmas(knownWords: List<String>): Set<String> {
-    for (word in knownWords) {
-        // Invalid words return "*"
+// Ignores:
+// - Empty strings;
+// - Invalid words;
+// - Particles and punctuation marks;
+// - Auxiliary verbs: e.g. Da, Desu;
+fun createKnownLemmas(knownWords: List<String>, tokenizer: Tokenizer): Set<String> {
+
+    val known_lemmas: Set<String> = buildSet {
+        for (word in knownWords) {
+            if (word.isEmpty()) continue
+
+            token = tokenizer.tokenize(word).first()
+            when (token.partOfSpeechLevel1) {
+                //Particle
+                "助詞" -> continue
+                //Auxiliary verb
+                "助動詞" -> continue
+                //Punctuation
+                "記号" -> continue
+            }
+
+            lemma = token.baseForm
+            //Filter out invalid words
+            if (lemma == "*") continue
+
+            add(lemma)
+        }
     }
 }
 
-//lemmas can be null if the word already is in its base form
 
 fun main() {
     println("First, let's try to parse a sentence with kuromoji")
