@@ -3,7 +3,7 @@ NPlusOne_JapaneseInContext
 I'm currently working on the app's proof of concept, using a tracer-bullet approach (the poc won't have a UI).
 
 The workflow will be as follows:
-1. Create an array of some strings with one Japanese word each (this will simulate Anki's API input);
+1. Create an array of some strings with one Japanese word each (this will simulate Anki's API input); Done
 2. Parse them with Kuromoji and make a set with their dictionary form called known_lemmas;
 3. Fetch an article from NHK Easy (it'll probably be in JSON);
 4. Parse it into sentences;
