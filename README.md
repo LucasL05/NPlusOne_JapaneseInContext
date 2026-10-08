@@ -4,7 +4,7 @@ I'm currently working on the app's proof of concept, using a tracer-bullet appro
 
 The workflow will be as follows:
 1. Create an array of some strings with one Japanese word each (this will simulate Anki's API input); Done
-2. Parse them with Kuromoji and make a set with their dictionary form called known_lemmas;
+2. Parse them with Kuromoji and make a set with their dictionary form called known_lemmas; Done
 3. Fetch an article from NHK Easy (it'll probably be in JSON);
 4. Parse it into sentences;
 5. Apply Kuromoji to each sentence and gather its lemmas into a list;
